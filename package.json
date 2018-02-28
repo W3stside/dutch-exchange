@@ -1,9 +1,12 @@
 {
-  "name": "@gnosis.pm/dutch-exchange",
+  "name": "@w3stside/dutch-exchange",
   "version": "0.1.0",
-  "description": "DutchX - Gnosis Dutch Auction Trading Platform",
+  "description": "TESTING DutchX - Gnosis Dutch Auction Trading Platform",
   "main": "src/index.js",
   "scripts": {
+    "homepage": "https://w3stside.github.io/dutch-exchange/",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "build:dev": "npm run clean && cross-env NODE_ENV=development webpack --config webpack.dev.config.js --progress",
     "build:prod": "npm run clean && cross-env NODE_ENV=production webpack --config webpack.prod.config.js --progress",
     "build": "npm run build:prod",
@@ -44,7 +47,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/gnosis/dutch-exchange.git"
+    "url": "https://github.com/w3stside/dutch-exchange.git"
   },
   "author": "Gnosis",
   "license": "ISC",
