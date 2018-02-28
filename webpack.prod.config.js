@@ -152,24 +152,24 @@ module.exports = {
     }),
     new NameAllModulesPlugin(),
     new ExtractTextPlugin('[name].[contenthash].css'),
-    new FaviconsWebpackPlugin({
-      logo: 'assets/img/gnosis_logo_favicon.png',
-      // Generate a cache file with control hashes and
-      // don't rebuild the favicons until those hashes change
-      persistentCache: true,
-      icons: {
-        android: false,
-        appleIcon: false,
-        appleStartup: false,
-        coast: false,
-        favicons: true,
-        firefox: false,
-        opengraph: false,
-        twitter: false,
-        yandex: false,
-        windows: false,
-      },
-    }),
+    // new FaviconsWebpackPlugin({
+    //   logo: 'assets/img/gnosis_logo_favicon.png',
+    //   // Generate a cache file with control hashes and
+    //   // don't rebuild the favicons until those hashes change
+    //   persistentCache: true,
+    //   icons: {
+    //     android: false,
+    //     appleIcon: false,
+    //     appleStartup: false,
+    //     coast: false,
+    //     favicons: true,
+    //     firefox: false,
+    //     opengraph: false,
+    //     twitter: false,
+    //     yandex: false,
+    //     windows: false,
+    //   },
+    // }),
     new HtmlWebpackPlugin({
       template: path.join(__dirname, 'src/html/index.html'),
     }),
